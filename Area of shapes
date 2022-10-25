@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main()
+{
+  int Pbase,Pheight;
+  printf("Enter base length of parellogram :- ");
+  scanf("%d",&Pbase);
+  printf("Enter height of parellogram :- ");
+  scanf("%d",&Pheight);
+  printf("Area of parellogram is %d \n",Pbase*Pheight);
+ 
+  float Tside1,Tside2,Theight;
+  printf("Enter the length of parallel sides of trapesium :- ");
+  scanf("%f%f",&Tside1,&Tside2);
+  printf("Enter the height of trapesium :- ");
+  scanf("%f",&Theight);
+  printf("Area of trapesium is %f \n", (0.5*(Tside1+Tside2)*Theight));
+ 
+  float Rdia1,Rdia2;
+  printf("Enter the lengths of diagonals of rhombus :- ");
+  scanf("%f%f",&Rdia1,&Rdia2);
+  printf("AREA OF RHOMBUS IS %f \n",0.5*Rdia1*Rdia2);
+ 
+  float Sradii;
+  printf("Enter the radii of sphere :- ");
+  scanf("%f",&Sradii);
+  printf("The area of sphere is %f \n",4*3.14*Sradii*Sradii);
+ 
+  float r1,r2;
+  float pi = 3.1417;
+  printf("Enter the radius of elipse :- ");
+  scanf("%f%f",&r1,&r2);
+  printf("AREA = %f",pi*r1*r2);
+  return 0;
+}
