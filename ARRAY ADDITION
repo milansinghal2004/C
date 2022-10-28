@@ -1,0 +1,53 @@
+#include<stdio.h>
+int main()
+{
+    // defining array
+    int row,column,i,j;
+    int A[10][10],B[10][10],Res[10][10];
+
+    // Taking details of 1st array
+    printf("For first array \n");
+    printf("Enetr the no. of rows : ");
+    scanf("%d",&row);
+    printf("Enter the number of column : ");
+    scanf("%d",&column);
+
+    // Taking values of array
+    printf("Enter the values : ");
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<column;j++)
+        {
+            scanf("%d%d",&A[i][j]);
+        }
+    }
+
+    // For second array
+    printf("For second array");
+
+    // Taking details of second array
+    printf("Enetr the no. of rows : ");
+    scanf("%d",&row);
+    printf("Enter the number of column : ");
+    scanf("%d",&column);
+
+    // Taking values in array
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<column;j++)
+        {
+            scanf("%d%d",&B[i][j]);
+        }
+    }
+    // Sum of array
+     printf("Sum of array : \n");
+    for (i=0; i<row; i++)
+    {
+        for (j=0; j<column; j++)
+        {
+            Res[i][j] = A[i][j] + B[i][j];
+            printf("%d \t", Res[i][j]);
+        }
+        printf("\n");
+    }   
+}
