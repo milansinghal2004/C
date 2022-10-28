@@ -4,7 +4,7 @@ int main()
     // defining array
     int row,column,i,j;
     int A[10][10],B[10][10],Res[10][10];
-
+ 
     // Taking details of 1st array
     printf("For first array \n");
     printf("Enetr the no. of rows : ");
