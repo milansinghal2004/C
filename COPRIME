@@ -1,0 +1,56 @@
+#include <stdio.h>
+void revers(int);
+void coprime(int,int);
+
+int main()
+{
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    revers(n);
+    return 0;
+}
+
+void revers(int a)
+{
+    int lastdigit, t;
+    int r=0;
+    t=a;
+    while(a!=0)
+    {
+        lastdigit = a % 10;
+        r = r*10 + lastdigit;
+        a = a / 10;
+    }
+    printf("Reversed number is: %d \n", r);
+    coprime(t,r);
+}
+
+void coprime(int num1, int num2)
+{
+    int h1, h2;
+    for(int i=2; i<num1; i++)
+    {
+        if(num1 % i == 0)
+        {
+            h1 = 1;
+        }
+    }
+    
+     for(int i=2; i<num2; i++)
+    {
+        if(num2 % i == 0)
+        {
+            h2 = 1;
+        }
+    }
+    if(h1 == 1 || h2 == 1)
+    {
+        printf("Both are not coprime numbers \n");   
+    }
+    else
+    {
+        printf("Both are coprime numbers \n");
+    }
+    printf("SAP ID 500107150");
+}
