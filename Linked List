@@ -1,0 +1,117 @@
+# Milan Singhal
+# 13-02-2023
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<malloc.h>
+struct node
+{
+    int data;
+    struct node * next;
+};
+struct node *head = NULL;
+void insert(struct node *);
+void delete();
+void display();
+void beg_insert(struct node *new1);
+void traverse();
+void beg_delete();
+void end_insert();
+int main()
+{
+    int choice;
+    struct node * ptr;
+    while(1)
+    {
+        printf("\nMenu -\n1 for inserting element in begining\n2 for deleting element from begining\n3 for traversing elements\n4 for inserting element in end\n5 for deleting element from end\n");
+        scanf("%d", &choice);
+        switch(choice)
+        {
+            case 1:
+            ptr = (struct node *)malloc(sizeof(struct node));
+            scanf("%d", &ptr->data);
+            ptr -> next = NULL;
+            beg_insert(ptr);
+            break;
+
+            case 2:
+            beg_delete();
+            break;
+
+            case 3:
+            traverse();
+            break;
+
+            case 4:
+            end_insert();
+
+            /*case 5:
+            end_delete();*/
+
+            default:
+            exit(1);
+        }
+    }
+}
+
+void beg_insert(struct node *new1)
+{
+    if(head == NULL)
+    {
+        head = new1;
+    }
+    else
+    {
+        new1 -> next = head;
+        head = new1;
+    }
+}
+
+void beg_delete()
+{
+    struct node *t = head;
+    if(head == NULL)
+    {
+        printf("Empty");
+    }
+    else
+    {
+        head = head -> next;
+        free(t);
+        t = NULL;
+    }
+}
+
+void traverse()
+{
+    struct node*t1 = head;
+    if(head == NULL)
+    {
+        printf("List is Empty");
+    }
+    else
+    {
+        while(t1 != NULL)
+        {
+            printf("%d\t", t1 -> data);
+            t1 = t1 -> next;
+        }
+    }
+}
+
+void end_insert(struct node *new1)
+{
+    struct node *temp = head;
+    if(head == NULL)
+    {
+        head = new1;
+    }
+    else
+    {
+        while(temp -> next != NULL)
+        {
+            temp = temp -> next;
+        }
+        temp -> next = new1;
+    }
+}
