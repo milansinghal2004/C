@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int a, u;
+	scanf("%d%d", &a, &u);
+	printf("%d",a-u);
+	return 0;
+}
+
