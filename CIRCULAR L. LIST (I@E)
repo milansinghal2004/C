@@ -1,0 +1,18 @@
+// insertion at the end
+void eins(struct node * new1)
+{
+    struct node * temp = head;
+    if(head == NULL)
+    {
+        head = new1;
+        head -> next = head;
+    }
+    else
+    {
+        while(temp -> next != head)
+        {
+            temp = temp -> next;
+        }
+            temp -> next = new1;
+            new1 -> next = head;
+    }
