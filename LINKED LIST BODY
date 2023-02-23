@@ -1,0 +1,56 @@
+#include<stdio.h>
+#include<malloc.h>
+#include<stdlib.h>
+
+struct node
+{
+    int data;
+    struct node *next;
+    struct node *prev;
+};
+struct node *head = NULL;
+
+void bins(struct node *new1);
+void eind(struct node *new1);
+void trav();
+void bdel();
+void edel();
+
+int main()
+{
+    while(1)
+    {
+        struct node *ptr;
+        int choice;
+        printf("Menu\n1.Insertion at the beginning\n2.Insertion at the ending\n3.Traversal\n4.Deletion from the beginning\n5.Deletion from the ending\n\nEnter your choice : ");
+        scanf("%d", &choice);
+        switch(choice)
+        {
+            case 1:
+            ptr = (struct node *)malloc(sizeof(struct node));
+            printf("Enter data : ");
+            scanf("%d", &ptr->data);
+            bins(ptr);
+            break;
+        
+            case 2:
+            ptr = (struct node *)malloc(sizeof(struct node));
+            printf("Enter data : ");
+            scanf("%d", &ptr->data);
+            eins(ptr);
+            break;
+        
+            case 3:
+            trav();
+        
+            case 4:
+            bdel();
+        
+            case 5:
+            edel();
+        
+            default:
+            exit(1);
+        }
+    }
+}
