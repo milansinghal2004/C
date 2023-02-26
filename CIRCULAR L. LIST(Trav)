@@ -1,0 +1,18 @@
+// traversal
+void trav()
+{
+    struct node *temp = head;
+    if(head == NULL)
+    {
+        printf("Underflow");
+    }
+    else
+    {
+        do
+        {
+            printf("%d", temp -> data);
+            temp = temp -> next;
+        }
+        while(temp != head)
+    }
+}
