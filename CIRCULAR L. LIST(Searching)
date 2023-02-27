@@ -1,0 +1,13 @@
+// searching
+void search()
+{
+    int count = 0, n;
+    struct node *temp = head;
+    printf("Enter the element for search : ")
+    scanf("%d", &n);
+    while(temp -> data != n)
+    {
+        count++;
+    }
+    printf("Your searched element is on %d position", count);
+}
