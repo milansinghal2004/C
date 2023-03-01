@@ -1,0 +1,14 @@
+// insertion at the beginning
+void bins(struct node *new1)
+{
+    if(head == NULL)
+    {
+        head = new1;
+    }
+    else
+    {
+        new1 -> next = head;
+        head -> prev = new1;
+        head = new1;
+    }
+}
