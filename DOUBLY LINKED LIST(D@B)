@@ -1,0 +1,17 @@
+// deletion from beginning
+void bdel()
+{
+    struct node *temp = head;
+    if(head == NULL)
+    {
+        printf("Deletion not possible");
+    }
+    else
+    {
+        head = head -> next;
+        free(temp);
+        temp = NULL;
+        head -> prev = NULL;
+        printf("Deleted");
+    }
+}
