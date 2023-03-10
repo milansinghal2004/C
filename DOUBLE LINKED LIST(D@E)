@@ -1,0 +1,24 @@
+// deletion from the ending
+void edel()
+{
+    struct node *temp = head, *temp1 = head;
+    if(head == NULL)
+    {
+        printf("Deletion not possible");
+    }
+    else
+    {
+        while(temp -> next != NULL)
+        {
+            temp = temp -> next;
+        }
+        while(temp1 -> next != temp)
+        {
+            temp1 = temp1 -> next;
+        }
+        temp1 -> next = NULL;
+        temp -> prev = NULL;
+        free(temp);
+        temp = NULL;
+    }
+}  
