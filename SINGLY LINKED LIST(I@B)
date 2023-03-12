@@ -11,3 +11,4 @@ void bins(struct node *new1)
         head = new1;
     }
 }
+
