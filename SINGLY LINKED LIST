@@ -1,0 +1,17 @@
+// traversal
+void trav()
+{
+    struct node *temp = head;
+    if(head == NULL)
+    {
+        printf("No list exist");
+    }
+    else
+    {
+        while(temp != NULL)
+        {
+            printf("%d", temp -> data);
+            temp = temp -> next;
+        }
+    }
+}
