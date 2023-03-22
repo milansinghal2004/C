@@ -1,0 +1,13 @@
+// POPPING ELEMENT
+void pop()
+{
+    if(top == -1)
+    {
+        printf("Underflow");
+    }
+    else
+    {
+        top = top - 1;
+        printf("Popped\n");
+    }
+}
