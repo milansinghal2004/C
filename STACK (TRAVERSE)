@@ -1,0 +1,17 @@
+// TRAVERSE
+void trav()
+{
+    int i = top;
+    if(top == -1)
+    {
+        printf("Underflow");
+    }
+    else
+    {
+        while(i >= 0)
+        {
+            printf("%d\t", stack[i]);
+            i--;
+        }
+    }
+}
