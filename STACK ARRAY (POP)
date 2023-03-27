@@ -1,0 +1,13 @@
+// POPPING ELEMENTS FROM STACK
+void pop()
+{
+    if (top == -1)
+    {
+        printf("Underflow\n");
+    }
+    else
+    {
+        printf("You have deleted %d.\n", stack[top]);
+        top -= 1;
+    }
+}
