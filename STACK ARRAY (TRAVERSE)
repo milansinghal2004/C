@@ -1,0 +1,18 @@
+// PRINTING ELEMENTS
+void _print()
+{
+    int x = top;
+    if (top == -1)
+    {
+        printf("Underflow\n");
+    }
+    else
+    {
+        int i;
+        for (i = x; i >= 0; i--)
+        {
+            printf("%d ", stack[i]);
+        }
+        printf("\n");
+    }
+}
