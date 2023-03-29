@@ -1,0 +1,6 @@
+// PRINTING PEAK VALUE
+void _peek()
+{
+    int x = top;
+    printf("your top most value is %d.\n", stack[x]);
+}
