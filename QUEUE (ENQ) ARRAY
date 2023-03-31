@@ -1,0 +1,20 @@
+void enq(int n)
+{
+    if(rear >= max-1)
+    {
+        printf("Overflow");
+    }
+    else
+    {
+        if(rear == -1)
+        {
+            rear = front = 0;
+            queue[rear] = n;
+        }
+        else
+        {
+            rear += 1;
+            queue[rear] = n;
+        }
+    }
+}
