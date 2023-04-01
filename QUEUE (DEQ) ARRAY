@@ -1,0 +1,19 @@
+// Dequeue in queue
+void deq()
+{
+    if(rear == -1 || front == -1)
+    {
+        printf("Underflow");
+    }
+    else
+    {
+        if(rear == 0)
+        {
+            rear = front = -1;
+        }
+        else
+        {
+            front += 1;
+        }
+    }
+}
