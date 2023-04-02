@@ -1,0 +1,17 @@
+// Traverse
+void trav()
+{
+    int i = front;
+    if(rear == -1)
+    {
+        printf("Underflow");
+    }
+    else
+    {
+        while(i <= rear)
+        {
+            printf("%d\t", queue[i]);
+            i = i + 1;
+        }
+    }
+}
