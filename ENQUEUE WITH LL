@@ -1,0 +1,14 @@
+// enqueue
+void enq(struct node *new1)
+{
+    if(rear == NULL)
+    {
+        rear = front = new1;
+    }
+    else
+    {
+        rear -> next = new1;
+        // rear = new1; or we can say
+        rear = rear -> next;
+    }
+}
