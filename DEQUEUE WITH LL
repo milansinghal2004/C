@@ -1,0 +1,25 @@
+// dequeue
+void deq()
+{
+    if(rear == NULL)
+    {
+        printf("NO QUEUE EXIST :(");
+    }
+    else if (front == rear)
+    {
+        front = NULL;
+        rear = NULL;
+        printf("DELETED :)");
+    }
+    
+    else
+    {
+        struct node *temp = front;
+        front = front -> next;
+        printf("%d is DELETED\n", temp -> data);
+        free(temp);
+        temp = NULL;
+        //printf("DELETED :)");
+    }
+}
+
