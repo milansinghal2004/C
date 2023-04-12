@@ -1,0 +1,21 @@
+// INSERTION (ENQUEUE)
+void enq(int n)
+{
+    if(( front == 0 && rear == max - 1 ) || ( front > 0 && rear == front - 1 ))
+    {
+        print("OVERFLOW :(");
+    }
+    else
+    {
+        if(rear == -1)
+        {
+            front = rear = 0;
+            queue[rear] = n;
+        }
+        else
+        {
+            rear = (rear + 1)%max;
+            queue[rear] = n;
+        }
+    }
+}
