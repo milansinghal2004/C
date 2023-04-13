@@ -1,0 +1,19 @@
+// DELETION (DEQUEUE)
+void deq()
+{
+    if(front == -1)
+    {
+        printf("UNDERFLOW :(");
+    }
+    else
+    {
+        if(rear == front)
+        {
+            rear = front = -1;
+        }
+        else
+        {
+            front = ( front + 1 ) % max;
+        }
+    }
+}
