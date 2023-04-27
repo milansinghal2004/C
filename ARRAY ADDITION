@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    // defining array
+    // defining the array
     int row,column,i,j;
     int A[10][10],B[10][10],Res[10][10];
  
