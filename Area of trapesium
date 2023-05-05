@@ -10,3 +10,4 @@ int main()
     printf("The area of trapesium is %d",d);
     return 0;
 }
+
