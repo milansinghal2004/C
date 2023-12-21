@@ -6,7 +6,7 @@ int main()
     scanf("%d%d",&a,&b);
     printf("Enter the altitude of trapesium : ");
     scanf("%d",&c);
-    d = 0.5*(a+b)*c;
+    d = 0.5*(a+b)*c; 
     printf("The area of trapesium is %d",d);
     return 0;
 }
