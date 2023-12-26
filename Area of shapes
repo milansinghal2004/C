@@ -14,7 +14,7 @@ int main()
   printf("Enter the height of trapesium :- ");
   scanf("%f",&Theight);
   printf("Area of trapesium is %f \n", (0.5*(Tside1+Tside2)*Theight));
- 
+  
   float Rdia1,Rdia2;
   printf("Enter the lengths of diagonals of rhombus :- ");
   scanf("%f%f",&Rdia1,&Rdia2);
