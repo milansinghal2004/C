@@ -10,7 +10,7 @@ int main()
       scanf("%d", &array[c]);
    }
    printf("Enter the position where you wish to insert an element\n");
-   scanf("%d", &position);
+   scanf("%d", &position); 
    printf("Enter the value to insert\n");
    scanf("%d", &value);
    for (c = n - 1; c >= position - 1; c--)
