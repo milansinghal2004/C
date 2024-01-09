@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on some group projects.
 - 📫 How to reach me 
 - Gmail - singhalmilan92@gmail.com
-- Insta - milan_jalaj
+- Insta - _.simply.milan._
 - or click here - https://www.instagram.com/milan_jalaj/
 
 <!---
