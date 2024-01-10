@@ -8,7 +8,7 @@ int main()
     scanf("%d",&amount);
     
     if(amount>=500)
-    {
+    { 
         n500 = amount/500;
         amount -= n500*500;
     }
