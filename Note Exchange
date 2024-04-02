@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int amount,n500,n200,n100,n50,n20,n10,n5,n1;
+    int amount,n500,n200,n100,n50,n20,n10,n5,n1; 
     n500=n200=n100=n50=n20=n10=n5=n1=0;
     
     printf("Enter your amount : ");
