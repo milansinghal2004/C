@@ -2,7 +2,7 @@
 - 👀 I’m curioust to learn how to code.
 - 🌱 I’m currently learning C language.
 - 💞️ I’m looking to collaborate on some group projects. 
-- 📫 How to reach me 
+- 📫 How to reach me  
 - Gmail - singhalmilan92@gmail.com
 - Insta - _.simply.milan._
 - or click here - https://www.instagram.com/milan_jalaj/ 
